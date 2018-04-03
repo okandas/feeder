@@ -60,11 +60,17 @@ func (a Activity) UnreadCount() (int64, error) {
 func (a Activity) Paginate(page, perPage int) ([]string, error) {
 
 	res, err := a.Feed.P.Paginate(a.UserID, page, perPage)
+
 	if err == nil {
+
 		res, err := a.Feed.P.ResetLastRead(a.UserID, time.Now().Unix())
 
 		if err == nil {
-			log.Printf("user has read feed %v", res)
+			if res == true {
+				log.Println("key does not exist, a new key holding a hash was created")
+			} else {
+				log.Println("field already exists in the hash, it has been overwritten.")
+			}
 		}
 
 	}
