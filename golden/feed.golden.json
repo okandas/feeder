@@ -1,0 +1,31 @@
+{
+    "name": "notifications",
+    "max_size": 5,
+    "per_page": 2,
+    "activities": [ 
+        { 
+            "user_id": "okandas",
+            "last_read": "2018-03-22T10:00:00-05:00",
+            "unread": 2,
+            "count": 3,
+            "activity": [
+                {
+                    "value": "the gods have removed",
+                    "at": "2018-03-22T10:00:00-05:00",
+                    "method": "crowdsourced"
+                },
+                {
+                    "value": "watched formula one",
+                    "at": "2018-03-21T10:00:00-05:00",
+                    "method": "import"
+                },
+                {
+                    "value": "secure the bag",
+                    "at": "2018-03-23T10:00:00-05:00",
+                    "method": "single supplier"
+                }
+            ]
+        }
+    ]
+
+}

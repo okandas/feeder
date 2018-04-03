@@ -1,0 +1,9 @@
+{
+    "name": "notifications",
+    "max_size": 5,
+    "per_page": 2,
+    "activities": [ 
+
+    ]
+
+}
